@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#202020"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/saat_gorseli"
+        android:layout_width="250dp"
+        android:layout_height="300dp"
+        android:foregroundGravity="top"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.114"
+        app:srcCompat="@drawable/kronometre2" />
+
+    <TextView
+        android:id="@+id/sayac_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/anton"
+        android:text="00:00"
+        android:textAlignment="center"
+        android:textColor="#8F8F8F"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/saat_gorseli"
+        app:layout_constraintEnd_toEndOf="@+id/saat_gorseli"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="@+id/saat_gorseli"
+        app:layout_constraintTop_toTopOf="@+id/saat_gorseli"
+        app:layout_constraintVertical_bias="0.608" />
+
+    <Button
+        android:id="@+id/baslat_button"
+
+        android:layout_width="125dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="100dp"
+
+        android:text="Başlat"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:cornerRadius="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/saat_gorseli"
+        app:layout_constraintVertical_bias="0.38"
+        tools:ignore="DuplicateClickableBoundsCheck" />
+
+    <Button
+        android:id="@+id/durdur_button"
+
+        android:layout_width="125dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="100dp"
+        android:backgroundTint="#aa4a0e"
+        android:text="Durdur"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:cornerRadius="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/saat_gorseli"
+        app:layout_constraintVertical_bias="0.38" />
+
+    <Button
+        android:id="@+id/sifirla_button"
+        android:layout_width="91dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="48dp"
+        android:backgroundTint="#420000"
+        android:text="sıfırla"
+        android:textSize="13dp"
+        android:textStyle="bold"
+        app:cornerRadius="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.909"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/baslat_button"
+        app:layout_constraintVertical_bias="0.34" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
